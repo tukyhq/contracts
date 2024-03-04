@@ -18,6 +18,7 @@ pragma solidity >=0.8.20 <0.9.0;
 struct Service {
     uint256 serviceId;
     address contractAddress;
+    address erc20ContractAddress;
     address fulfiller;
     address validator;
     uint256 feeAmount;

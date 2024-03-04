@@ -3,6 +3,7 @@ pragma solidity >=0.8.20 <0.9.0;
 
 import '@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol';
 import '@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol';
+import './IFulfillableRegistry.sol';
 
 /**
  * @title FulfillableRegistry
@@ -15,18 +16,7 @@ import '@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol';
  * @dev This contract uses UUPSUpgradeable.
  * 
  */
-contract FulfillableRegistry is UUPSUpgradeable, OwnableUpgradeable {
-
-    /**
-     * Service definition
-     */
-    struct Service {
-        uint256 serviceId;
-        address contractAddress;
-        address fulfiller;
-        address validator;
-        uint256 feeAmount;
-    }
+contract FulfillableRegistry is IFulfillableRegistry, UUPSUpgradeable, OwnableUpgradeable {
 
     mapping(uint256 => Service) private _serviceRegistry;
 

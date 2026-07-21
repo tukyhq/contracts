@@ -5,6 +5,9 @@ The Bando Fulfillment Protocol EVM smart contracts suite suite.
 [![Run Tests and Coverage](https://github.com/bandohq/evm-fulfillment-protocol/actions/workflows/ci.yaml/badge.svg)](https://github.com/bandohq/evm-fulfillment-protocol/actions/workflows/ci.yaml)
 [![Build](https://github.com/bandohq/evm-fulfillment-protocol/actions/workflows/build-abis.yml/badge.svg)](https://github.com/bandohq/evm-fulfillment-protocol/actions/workflows/build-abis.yml)
 
+Learn more on the docs:
+https://bando.gitbook.io/protocol/
+
 The project is a hybrid of hardhat and forge. 
 We run integration tests with hardhat and deploy and run other tests with forge.
 
